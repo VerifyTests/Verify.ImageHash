@@ -1,6 +1,6 @@
 # <img src="/src/icon.png" height="30px"> Verify.ImageHash
 
-[![Build status](https://ci.appveyor.com/api/projects/status/ersj3ag6pitygha5?svg=true)](https://ci.appveyor.com/project/SimonCropp/Verify-ImageHash)
+[![Build status](https://ci.appveyor.com/api/projects/status/48pfe99118r80g72?svg=true)](https://ci.appveyor.com/project/SimonCropp/Verify-ImageHash)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.ImageHash.svg)](https://www.nuget.org/packages/Verify.ImageHash/)
 
 Extends [Verify](https://github.com/VerifyTests/Verify) to allow comparison of images via [ImageHash](https://github.com/coenm/ImageHash).
