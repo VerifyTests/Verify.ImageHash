@@ -1,0 +1,14 @@
+﻿{
+  Type: VerifyException,
+  Message:
+Results do not match.
+Differences:
+Received: Tests.FailingCompareInner.received.jpg
+Verified: Tests.FailingCompareInner.verified.jpg
+Compare Result:
+diff(68.75) < threshold(85).
+If this difference is acceptable, use:
+
+ * Globally: VerifyImageHash.RegisterComparers(68.75);
+ * For one test: Verifier.VerifyFile("file.jpg").UseImageHash(68.75);
+}
