@@ -7,8 +7,6 @@ Extends [Verify](https://github.com/VerifyTests/Verify) to allow comparison of i
 
 Contains [comparers](https://github.com/VerifyTests/Verify/blob/master/docs/comparer.md) for png, jpg, and bmp.
 
-<a href='https://dotnetfoundation.org' alt='Part of the .NET Foundation'><img src='https://raw.githubusercontent.com/VerifyTests/Verify/master/docs/dotNetFoundation.svg' height='30px'></a><br>
-Part of the [.NET Foundation](https://dotnetfoundation.org)
 
 
 ## NuGet package
