@@ -10,10 +10,8 @@ public static class VerifyImageHash
     /// <summary>
     /// Helper method that calls <see cref="RegisterComparers"/>(threshold = 95, new DifferenceHash()) for png, bmp, and jpg.
     /// </summary>
-    public static void Initialize()
-    {
+    public static void Initialize() =>
         RegisterComparers();
-    }
 
     public static void RegisterComparers(double threshold = 95, IImageHash? algorithm = null)
     {
@@ -22,24 +20,18 @@ public static class VerifyImageHash
         RegisterComparer(threshold, algorithm, "jpg");
     }
 
-    public static void UseImageHash(this VerifySettings settings, double threshold = 95, IImageHash? algorithm = null)
-    {
+    public static void UseImageHash(this VerifySettings settings, double threshold = 95, IImageHash? algorithm = null) =>
         settings.UseStreamComparer(
             (received, verified, _) => Compare(threshold, algorithm, received, verified));
-    }
 
-    public static SettingsTask UseImageHash(this SettingsTask settings, double threshold = 95, IImageHash? algorithm = null)
-    {
-        return settings.UseStreamComparer(
+    public static SettingsTask UseImageHash(this SettingsTask settings, double threshold = 95, IImageHash? algorithm = null) =>
+        settings.UseStreamComparer(
             (received, verified, _) => Compare(threshold, algorithm, received, verified));
-    }
 
-    public static void RegisterComparer(double threshold, IImageHash? algorithm, string extension)
-    {
+    public static void RegisterComparer(double threshold, IImageHash? algorithm, string extension) =>
         VerifierSettings.RegisterStreamComparer(
             extension,
             (received, verified, _) => Compare(threshold, algorithm, received, verified));
-    }
 
     static Task<CompareResult> Compare(double threshold, IImageHash? algorithm, Stream received, Stream verified)
     {

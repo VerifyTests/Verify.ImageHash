@@ -2,9 +2,8 @@
 public class Tests
 {
     [Test]
-    public Task FailingCompare()
-    {
-        return ThrowsTask(async () =>
+    public Task FailingCompare() =>
+        ThrowsTask(async () =>
             {
                 await VerifyFile("sample.jpg")
                     .DisableDiff()
@@ -13,5 +12,4 @@ public class Tests
             })
             .IgnoreStackTrack()
             .ScrubLinesContaining("clipboard", "DiffEngineTray");
-    }
 }

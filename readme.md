@@ -24,13 +24,11 @@ Enable:
 public static class ModuleInitializer
 {
     [ModuleInitializer]
-    public static void Init()
-    {
+    public static void Init() =>
         VerifyImageHash.Initialize();
-    }
 }
 ```
-<sup><a href='/src/Tests/ModuleInitializer.cs#L1-L8' title='Snippet source file'>snippet source</a> | <a href='#snippet-ModuleInitializer.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/ModuleInitializer.cs#L1-L6' title='Snippet source file'>snippet source</a> | <a href='#snippet-ModuleInitializer.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -42,18 +40,16 @@ The following will use ImageHash to compare the images instead of the default Di
 <a id='snippet-compareimage'></a>
 ```cs
 [Test]
-public Task CompareImage()
-{
-    return VerifyFile("sample.jpg");
-}
+public Task CompareImage() =>
+    VerifyFile("sample.jpg");
 ```
-<sup><a href='/src/Tests/Samples.cs#L4-L12' title='Snippet source file'>snippet source</a> | <a href='#snippet-compareimage' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Samples.cs#L4-L10' title='Snippet source file'>snippet source</a> | <a href='#snippet-compareimage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
 ### Register all comparers
 
-All comparers can be regietered:
+All comparers can be registered:
 
 ```
 VerifyImageHash.RegisterComparers();
