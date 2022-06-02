@@ -12,11 +12,11 @@ NotEqual:
 
 Received: Tests.FailingCompareInner.received.jpg
 Verified: Tests.FailingCompareInner.verified.jpg
-Compare Result: similarity(39.0625) < threshold(85).
+Compare Result: similarity(42.1875) < threshold(85).
 If this difference is acceptable, use:
 
- * Globally: VerifyImageHash.RegisterComparers(39.0625);
- * For one test: Verifier.VerifyFile("file.jpg").UseImageHash(39.0625);
+ * Globally: VerifyImageHash.RegisterComparers(42.1875);
+ * For one test: Verifier.VerifyFile("file.jpg").UseImageHash(42.1875);
 
 
 }
