@@ -3,16 +3,17 @@
   Message:
 Directory: {ProjectDirectory}
 NotEqual:
-  - Received: Tests.FailingCompareInner.received.jpg
+  - Received: Tests.FailingCompareInner.DotNet6_0.received.jpg
     Verified: Tests.FailingCompareInner.verified.jpg
 
 FileContent:
 
 NotEqual:
 
-Received: Tests.FailingCompareInner.received.jpg
+Received: Tests.FailingCompareInner.DotNet6_0.received.jpg
 Verified: Tests.FailingCompareInner.verified.jpg
-Compare Result: similarity(42.1875) < threshold(85).
+Compare Result:
+similarity(42.1875) < threshold(85).
 If this difference is acceptable, use:
 
  * Globally: VerifyImageHash.RegisterComparers(42.1875);
