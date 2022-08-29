@@ -3,14 +3,14 @@
   Message:
 Directory: {ProjectDirectory}
 NotEqual:
-  - Received: Tests.FailingCompareInner.DotNet6_0.received.jpg
+  - Received: Tests.FailingCompareInner.received.jpg
     Verified: Tests.FailingCompareInner.verified.jpg
 
 FileContent:
 
 NotEqual:
 
-Received: Tests.FailingCompareInner.DotNet6_0.received.jpg
+Received: Tests.FailingCompareInner.received.jpg
 Verified: Tests.FailingCompareInner.verified.jpg
 Compare Result:
 similarity(42.1875) < threshold(85).
