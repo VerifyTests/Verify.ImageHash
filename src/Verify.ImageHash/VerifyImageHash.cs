@@ -10,11 +10,15 @@ public static class VerifyImageHash
     /// <summary>
     /// Helper method that calls <see cref="RegisterComparers"/>(threshold = 95, new DifferenceHash()) for png, bmp, and jpg.
     /// </summary>
-    public static void Initialize() =>
+    public static void Initialize()
+    {
+        InnerVerifier.ThrowIfVerifyHasBeenRun();
         RegisterComparers();
+    }
 
     public static void RegisterComparers(double threshold = 95, IImageHash? algorithm = null)
     {
+        InnerVerifier.ThrowIfVerifyHasBeenRun();
         RegisterComparer(threshold, algorithm, "png");
         RegisterComparer(threshold, algorithm, "bmp");
         RegisterComparer(threshold, algorithm, "jpg");
