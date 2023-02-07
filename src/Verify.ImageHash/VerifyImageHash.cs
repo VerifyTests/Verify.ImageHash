@@ -7,11 +7,20 @@ namespace VerifyTests;
 
 public static class VerifyImageHash
 {
+    public static bool Initialized { get; private set; }
+
     /// <summary>
     /// Helper method that calls <see cref="RegisterComparers"/>(threshold = 95, new DifferenceHash()) for png, bmp, and jpg.
     /// </summary>
     public static void Initialize()
     {
+        if (Initialized)
+        {
+            throw new("Already Initialized");
+        }
+
+        Initialized = true;
+
         InnerVerifier.ThrowIfVerifyHasBeenRun();
         RegisterComparers();
     }
@@ -51,10 +60,12 @@ public static class VerifyImageHash
             return Task.FromResult(CompareResult.Equal);
         }
 
-        return Task.FromResult(CompareResult.NotEqual($@"similarity({similarity}) < threshold({threshold}).
-If this difference is acceptable, use:
-
- * Globally: VerifyImageHash.RegisterComparers({similarity});
- * For one test: Verifier.VerifyFile(""file.jpg"").UseImageHash({similarity});"));
+        return Task.FromResult(CompareResult.NotEqual($"""
+            similarity({similarity}) < threshold({threshold}).
+            If this difference is acceptable, use:
+            
+             * Globally: VerifyImageHash.RegisterComparers({similarity});
+             * For one test: Verifier.VerifyFile("file.jpg").UseImageHash({similarity});
+            """));
     }
 }
