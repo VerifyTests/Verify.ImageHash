@@ -1,5 +1,6 @@
 # <img src="/src/icon.png" height="30px"> Verify.ImageHash
 
+[![Discussions](https://img.shields.io/badge/Verify-Discussions-yellow?svg=true&label=)](https://github.com/orgs/VerifyTests/discussions)
 [![Build status](https://ci.appveyor.com/api/projects/status/48pfe99118r80g72?svg=true)](https://ci.appveyor.com/project/SimonCropp/Verify-ImageHash)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.ImageHash.svg)](https://www.nuget.org/packages/Verify.ImageHash/)
 
