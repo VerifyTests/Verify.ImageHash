@@ -4,6 +4,7 @@
     <NoWarn>CS1591;CS0649</NoWarn>
     <Version>2.1.0</Version>
     <AssemblyVersion>1.0.0</AssemblyVersion>
+    <LangVersion>preview</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <PackageTags>ImageHash, ImageSharp, Verify</PackageTags>
     <Description>Extends Verify (https://github.com/VerifyTests/Verify) to allow verification via ImageHash (https://github.com/coenm/ImageHash).</Description>
