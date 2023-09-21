@@ -6,6 +6,8 @@
 
 Extends [Verify](https://github.com/VerifyTests/Verify) to allow comparison of images via [ImageHash](https://github.com/coenm/ImageHash).
 
+**See [Milestones](../../milestones?state=closed) for release notes.**
+
 Contains [comparers](https://github.com/VerifyTests/Verify/blob/master/docs/comparer.md) for png, jpg, and bmp.
 
 
