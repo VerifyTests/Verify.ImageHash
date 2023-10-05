@@ -4,7 +4,7 @@
     <SignAssembly>False</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Argon" Version="0.11.0" />
+    <PackageReference Include="Argon" Version="0.12.0" />
     <PackageReference Include="SixLabors.ImageSharp" Version="3.0.2" />
     <PackageReference Include="CoenM.ImageSharp.ImageHash" Version="1.3.6" />
     <PackageReference Include="Polyfill" Version="1.29.0" PrivateAssets="all" />
