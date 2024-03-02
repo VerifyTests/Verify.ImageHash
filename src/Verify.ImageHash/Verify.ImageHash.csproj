@@ -9,6 +9,6 @@
     <PackageReference Include="CoenM.ImageSharp.ImageHash" Version="1.3.6" />
     <PackageReference Include="Polyfill" Version="3.0.0" PrivateAssets="all" />
     <PackageReference Include="Verify" Version="23.2.2" />
-    <PackageReference Include="ProjectDefaults" Version="1.0.116" PrivateAssets="all" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.118" PrivateAssets="all" />
   </ItemGroup>
 </Project>
