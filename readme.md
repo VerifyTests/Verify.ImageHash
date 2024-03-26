@@ -34,13 +34,13 @@ public static void Init() =>
 The following will use ImageHash to compare the images instead of the default DifferenceHash algorithm.
 
 <!-- snippet: CompareImage -->
-<a id='snippet-compareimage'></a>
+<a id='snippet-CompareImage'></a>
 ```cs
 [Test]
 public Task CompareImage() =>
     VerifyFile("sample.jpg");
 ```
-<sup><a href='/src/Tests/Samples.cs#L4-L10' title='Snippet source file'>snippet source</a> | <a href='#snippet-compareimage' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Samples.cs#L4-L10' title='Snippet source file'>snippet source</a> | <a href='#snippet-CompareImage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
