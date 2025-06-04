@@ -40,7 +40,7 @@ The following will use ImageHash to compare the images instead of the default Di
 public Task CompareImage() =>
     VerifyFile("sample.jpg");
 ```
-<sup><a href='/src/Tests/Samples.cs#L4-L10' title='Snippet source file'>snippet source</a> | <a href='#snippet-CompareImage' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Samples.cs#L6-L12' title='Snippet source file'>snippet source</a> | <a href='#snippet-CompareImage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -51,6 +51,34 @@ All comparers can be registered:
 ```
 VerifyImageHash.RegisterComparers();
 ```
+
+
+### Use specific threshold
+
+<!-- snippet: CompareImageThreshold -->
+<a id='snippet-CompareImageThreshold'></a>
+```cs
+[Test]
+public Task CompareImageThreshold() =>
+    VerifyFile("sample.jpg")
+        .UseImageHash(threshold: 85);
+```
+<sup><a href='/src/Tests/Samples.cs#L14-L21' title='Snippet source file'>snippet source</a> | <a href='#snippet-CompareImageThreshold' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+
+### Use specific algorithm
+
+<!-- snippet: CompareImageAlgorithm -->
+<a id='snippet-CompareImageAlgorithm'></a>
+```cs
+[Test]
+public Task CompareImageAlgorithm() =>
+    VerifyFile("sample.jpg")
+        .UseImageHash(algorithm: new PerceptualHash());
+```
+<sup><a href='/src/Tests/Samples.cs#L23-L30' title='Snippet source file'>snippet source</a> | <a href='#snippet-CompareImageAlgorithm' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
 
 
 ## Icon
