@@ -12,4 +12,8 @@ Extends [Verify](https://github.com/VerifyTests/Verify) to allow comparison of i
 
 [Entity Framework Extensions](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=Verify.ImageHash) is a major sponsor and is proud to contribute to the development this project.
 
-[![Entity Framework Extensions](https://raw.githubusercontent.com/VerifyTests/Verify.ImageHash/refs/heads/main/docs/zzz.png)](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=Verify.ImageHash)<!-- endInclude -->
+[![Entity Framework Extensions](https://raw.githubusercontent.com/VerifyTests/Verify.ImageHash/refs/heads/main/docs/zzz.png)](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=Verify.ImageHash)
+
+### Developed using JetBrains IDEs
+
+[![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSourceSupport)<!-- endInclude -->
