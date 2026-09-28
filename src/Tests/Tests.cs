@@ -1,4 +1,5 @@
-﻿[TestFixture]
+﻿namespace VerifyImageHashTests;
+
 public class Tests
 {
     [Test]

@@ -1,6 +1,5 @@
 ﻿using CoenM.ImageHash.HashAlgorithms;
 
-[TestFixture]
 public class Samples
 {
     #region CompareImage
