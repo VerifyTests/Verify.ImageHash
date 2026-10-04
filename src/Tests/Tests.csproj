@@ -16,6 +16,7 @@
     <PackageReference Include="Verify" />
     <ProjectReference Include="..\Verify.ImageHash\Verify.ImageHash.csproj" />
     <PackageReference Include="ProjectDefaults" PrivateAssets="all" />
+    <PackageReference Include="ProjectFiles" PrivateAssets="all" />
 
     <None Update="sample.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

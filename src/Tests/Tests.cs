@@ -6,7 +6,7 @@ public class Tests
     public Task FailingCompare() =>
         ThrowsTask(async () =>
             {
-                await VerifyFile("sample.jpg")
+                await VerifyFile(ProjectFiles.sample_jpg.Path)
                     .DisableDiff()
                     .UseMethodName("FailingCompareInner")
                     .UseImageHash(85);
