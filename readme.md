@@ -14,7 +14,8 @@ Contains [comparers](https://github.com/VerifyTests/Verify/blob/master/docs/comp
 ## Sponsors
 
 
-### Entity Framework Extensions<!-- include: sponsors. path: /docs/sponsors.include.md -->
+<!-- include: sponsors. path: /docs/sponsors.include.md -->
+### Entity Framework Extensions
 
 [Entity Framework Extensions](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=Verify.ImageHash) is a major sponsor and is proud to contribute to the development this project.
 
